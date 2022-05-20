@@ -15,6 +15,7 @@ class HomeController extends Controller
 	 *
 	 * @return void
 	 */
+    // define a constructors
 	public function __construct()
 	{
 		parent::__construct();
@@ -25,6 +26,7 @@ class HomeController extends Controller
 	 *
 	 * @return \Illuminate\Contracts\Support\Renderable
 	 */
+    // call the class without mentioning the function
 	public function index()
 	{
 		$products = Product::popular()->get();
